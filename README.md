@@ -1,34 +1,36 @@
 # VietnameseSignLanguage
-# 🎬 Anime Scene Gallery
 
-An interactive gallery featuring iconic scenes from my favorite anime series, built with React and Framer Motion. Each title reveals three carefully chosen scenes with dynamic animations and mouse-tracked motion effects.
+Đề tài đặt ra bài toán xây dựng một hệ thống phần mềm có khả năng thu nhận hình ảnh từ camera theo thời gian thực, nhận diện các cử chỉ dùng ngôn ngữ kí hiệu tiếng Việt và chuyển đổi chúng thành văn bản, nhằm hỗ trợ giao tiếp giữa người điếc và người bình thường.
 
-## ✨ Technologies
+## Technologies & Tools
 
-- `React`
-- `TypeScript`
-- `Framer Motion`
-- `Tailwind CSS`
-- `Vite`
+- 'python`
+- `Google Colab`
+- `OpenCV` /  `mediapipe`
+- `numpy` / `scipy`/ `pandas` / `json`
+- `tensorflow` / `Keras`
+- `Matplotlib` / `Seaborn`
+  
+## Features
 
-## 🚀 Features
+- Ghi hình dữ liệu.
+- Trích xuất các điểm landmark.
+- Nhận điện chính xác trên thời gian thực.
+- Ghép kết quả nhận diện thành câu văn bản.
+- Hiển thị giao diện trực quan.
 
-- Spring physics for natural feeling animations
-- Each title reveals three iconic scenes when hovered
-- Scenes respond to mouse movement with parallax effects
-- Adapts to different screen sizes with mobile warnings
+## The Process
 
-## 📍 The Process
+Hệ thống được tổ chức theo kiến trúc pipeline gồm hai giai đoạn tách biệt: giai đoạn ngoại tuyến (offline) chịu trách nhiệm xây dựng dữ liệu và huấn luyện mô hình, và giai đoạn trực tuyến (online) chịu trách nhiệm nhận diện thời gian thực. Hai giai đoạn chia sẻ chung một bộ hằng số cấu hình (số điểm landmark, độ dài chuỗi, số đặc trưng) để đảm bảo tính nhất quán giữa dữ liệu huấn luyện và dữ liệu suy luận.
 
-I've been on a mission to make something fun with my favorite anime scenes. Most galleries felt static, so I wanted to create something that felt alive. Started simple with React and built up the interactions. When you hover over a title, it smoothly reveals iconic moments from that series. Added some mouse tracking magic with Framer Motion to make the scenes feel more dynamic, like they're floating in space. Sure, it may not be perfect on phones (desktop is where it shines), but I'm pretty happy with how the animations turned out!
+## Running the Project
 
-## 🚦 Running the Project
-
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Run development server: `npm run dev`
-4. Open `http://localhost:5173` in your browser
+**Quá trình thu thập dữ liệu**
+- Run file record_dataset_fixed.py
+**Quá trình nhận diện**
+- Run file vid1.py
 
 ## 📦 Preview
 
-<!-- Để chèn video như trong ảnh, bạn chỉ cần KÉO THẢ file .mp4 từ máy tính vào ô soạn thảo của GitHub -->
+https://github.com/user-attachments/assets/1ff35d4b-a4bd-494f-8f68-e42d1af6c4f3
+

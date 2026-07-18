@@ -1,10 +1,10 @@
-# VietnameseSignLanguage
+# Vietnamese Sign Language
 
 Đề tài đặt ra bài toán xây dựng một hệ thống phần mềm có khả năng thu nhận hình ảnh từ camera theo thời gian thực, nhận diện các cử chỉ dùng ngôn ngữ kí hiệu tiếng Việt và chuyển đổi chúng thành văn bản, nhằm hỗ trợ giao tiếp giữa người điếc và người bình thường.
 
 ## Technologies & Tools
 
-- 'python`
+- `python`
 - `Google Colab`
 - `OpenCV` /  `mediapipe`
 - `numpy` / `scipy`/ `pandas` / `json`
